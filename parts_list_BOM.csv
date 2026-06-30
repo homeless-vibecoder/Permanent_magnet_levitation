@@ -1,0 +1,8 @@
+Item,Specification,Vendor,SKU / Link,Quantity,Unit Price (USD),Subtotal (USD),Notes
+Neodymium block magnets,"N52, 6 x 2 x 1 mm",AMF Magnets USA,SKU 22071 (https://www.amfmagnets.com/),1000,0.18,180.00,Bulk pack; only a few dozen used across the prototypes
+PLA filament,"1.75 mm, ~1 kg spool",Generic,—,1,~20.00,~20.00,Used for the printed magnet holders (Neptune 3 Pro)
+Wooden craft / popsicle sticks,Standard,Generic,—,1 pack,~3.00,~3.00,Structural links of the triangular frame
+Corrugated cardboard,Scrap,—,—,1,0.00,0.00,Substrate for hand-drawn field maps and the first prototype
+Tape / plastic wrap,Clear,Generic,—,1,~2.00,~2.00,Retains magnets in the holders and on cardboard
+Cyanoacrylate (super) glue,—,Generic,—,1,~4.00,~4.00,Bonding magnets / holders
+Thread / string,—,Generic,—,1,~2.00,~2.00,Tether used in the constrained hover test

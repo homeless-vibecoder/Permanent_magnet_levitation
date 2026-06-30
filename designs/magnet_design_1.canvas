@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"8e3e00732c4bf6f2","x":-236,"y":-139,"width":456,"height":59,"type":"text","text":"Magnet design - how to arrange magnets for levitation"},
+		{"id":"698b923b578046c9","x":-272,"y":23,"width":264,"height":117,"type":"text","text":"Let the ground magnets be on integer lattice (same polarity)."},
+		{"id":"efa923e08f7b619c","x":51,"y":30,"width":269,"height":52,"type":"text","text":"What arrangement of magnets should the platform have?"},
+		{"id":"36656c425b3d73aa","x":-359,"y":340,"width":439,"height":280,"type":"text","text":"To make a good arrangement, let us first think of the ideal one (continuous), and then try to approximate it with discrete magnets."},
+		{"id":"5f1b41779fd5bc31","x":305,"y":228,"width":435,"height":172,"type":"text","text":"What is force and torque acting on a magnet at $(x,y)$, floating at height $h$, and horizontal? The ground is stacked with magnets (on integer lattice)."},
+		{"id":"dd95d69195f97bb7","x":740,"y":-18,"width":424,"height":246,"type":"text","text":"what is a force between two magnets? I want a simple (but accurate) approximation for the following scenario: there are magnets on the ground an an integer lattice (all same polarity). There is a magnet at a small height $h$, and at $(x,y)$. The magnet that floats at height $h$ is repeling the ground magnets - it is very close to being horizontal with the ground. I'd like to understand the forces and torque on the floating magnet."},
+		{"id":"12633dc14787cd06","x":724,"y":480,"width":536,"height":106,"type":"text","text":"Let us use magnetic charge. Let magnets be rectangular prisms of side-length $w$ and height $l$. $w\\in (0,0.5]$, cuz integer lattice."},
+		{"id":"337059bf105c2fcf","x":160,"y":549,"width":520,"height":206,"type":"text","text":"Repulsion between floating magnet and a ground magnet is\n\n$l^2$\n\n$F_z=f/h^2+f/(h+2)^2-2f/(h+1)^2=f(\\frac{1}{h^2}+\\frac{1}{(h+2)^2}-2\\frac{1}{(h+1)^2})$, which comes from magnetic charges $S--1--N--h--N--1--S$."},
+		{"id":"bb8a487b6d1321e1","x":880,"y":655,"width":284,"height":100,"type":"text","text":"Let us normalize the lengths (stretch height) so that the height of the magnets $l=1$."},
+		{"id":"103b09f9b386555d","x":830,"y":831,"width":550,"height":194,"type":"text","text":"Let $f$ be the amount of force unit area ground magnet exerts on unit area .\n$f=Cq_1q_2$ - the charges and constant (for units)\n\nThat is, we consider the configuration\n$S--1--N--h--N--1--S$, and assume the area approaches zero (so, single particle), and divide by the area. That's $f$."},
+		{"id":"1a00c0001bdf3123","x":-39,"y":825,"width":562,"height":395,"type":"text","text":"To look at a force acting on the floating magnet, let us calculate force on each magnetic charge, and then add up the forces.\n\n$F_{(x,y)}=$"}
+	],
+	"edges":[
+		{"id":"74d9079d8673a99d","fromNode":"8e3e00732c4bf6f2","fromSide":"bottom","toNode":"698b923b578046c9","toSide":"top"},
+		{"id":"4cb853d516fcb92d","fromNode":"698b923b578046c9","fromSide":"right","toNode":"efa923e08f7b619c","toSide":"left"},
+		{"id":"e9c9c2794c8f2c4c","fromNode":"5f1b41779fd5bc31","fromSide":"bottom","toNode":"12633dc14787cd06","toSide":"top"},
+		{"id":"6e59bf6c86f2b3be","fromNode":"bb8a487b6d1321e1","fromSide":"right","toNode":"12633dc14787cd06","toSide":"right"},
+		{"id":"49e026d530866de2","fromNode":"5f1b41779fd5bc31","fromSide":"bottom","toNode":"337059bf105c2fcf","toSide":"top"},
+		{"id":"66f2956d4630a88d","fromNode":"12633dc14787cd06","fromSide":"left","toNode":"337059bf105c2fcf","toSide":"right"},
+		{"id":"3b92a0f3038538b1","fromNode":"bb8a487b6d1321e1","fromSide":"left","toNode":"337059bf105c2fcf","toSide":"right"},
+		{"id":"8549fbf757620358","fromNode":"103b09f9b386555d","fromSide":"left","toNode":"337059bf105c2fcf","toSide":"right"},
+		{"id":"6642fe198adf3fbd","fromNode":"337059bf105c2fcf","fromSide":"bottom","toNode":"1a00c0001bdf3123","toSide":"top"}
+	]
+}

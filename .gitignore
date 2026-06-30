@@ -1,0 +1,18 @@
+# Private / not for sharing (contains personal order + shipping info)
+magnets_order_confirmation.png
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
